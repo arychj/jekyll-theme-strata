@@ -4,7 +4,7 @@
     <a href="{{ "/" | relative_url }}" class="image avatar">
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" />
-      {% elsif site..links.github_username %}
+      {% elsif site.links.github_username %}
         {% avatar {{ site.links.github_username }} size=128 %}
       {% else %}
         {{ site.title | escape }}
