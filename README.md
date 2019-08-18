@@ -42,16 +42,19 @@ You can add links to your social accounts by adding one or more of the
 following options to your config.
 
 ```yaml
-twitter_username: ~
-github_username:  ~
-dribbble_username: ~
-facebook_username: ~
-flickr_username: ~
-instagram_username: ~
-linkedin_username: ~
-pinterest_username: ~
-youtube_username: ~
-googleplus_username: ~
+links:
+  resume: ~
+  twitter_username: ~
+  github_username:  ~
+  dribbble_username: ~
+  facebook_username: ~
+  flickr_username: ~
+  instagram_username: ~
+  linkedin_username: ~
+  pinterest_username: ~
+  youtube_username: ~
+  googleplus_username: ~
+
 rss: true # false to hide rss icon
 ```
 
