@@ -12,7 +12,6 @@
     </a>
     <h1>
       <strong>{{ site.title | escape }}</strong><br />
-      {{ site.description | escape }}
       <nav>
 		{%- assign default_paths = site.pages | map: "path" -%}
         {%- assign nav_paths = site.nav | default: default_paths -%}
@@ -23,6 +22,7 @@
           {%- endif -%}
         {%- endfor -%}
       </nav>
+      {{ site.description | escape }}
     </h1>
   </div>
 </header>
