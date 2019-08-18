@@ -5,7 +5,7 @@
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" />
       {% elsif site.github_username %}
-        {% avatar {{ site.github_username }} %}
+        {% avatar {{ site.github_username }} size=128 %}
       {% else %}
         {{ site.title | escape }}
       {% endif %}
