@@ -19,10 +19,6 @@ rss: true
 show_excerpts: true
 date_format: "%b %-d, %Y"
 
-nav:
-  - index.md
-  - about.md
-
 logo: https://picsum.photos/123?image=669
 
 # Build settings
