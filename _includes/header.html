@@ -1,7 +1,13 @@
 <!-- Header -->
 <header id="header">
   <div class="inner">
-    <a href="{{ "/" | relative_url }}" class="image avatar"><img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" /></a>
+    <a href="{{ "/" | relative_url }}" class="image avatar">
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" />
+      {% else %}
+        <img src="{{ site.email | gravatar }}" alt="{{ site.title | escape }}" />
+      {% endif %}
+    </a>
     <h1>
       <strong>{{ site.title | escape }}</strong><br />
       {{ site.description | escape }}
