@@ -6,7 +6,7 @@
         <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" />
       {% if site.github_username %}
       {% else %}
-        {% avatar site.github_username %}
+        {% avatar {{ site.github_username }} %}
       {% endif %}
     </a>
     <h1>
