@@ -4,8 +4,9 @@
     <a href="{{ "/" | relative_url }}" class="image avatar">
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" />
+      {% if site.github_username %}
       {% else %}
-        <img src="{{ site.email | gravatar }}" alt="{{ site.title | escape }}" />
+        {% avatar site.github_username %}
       {% endif %}
     </a>
     <h1>

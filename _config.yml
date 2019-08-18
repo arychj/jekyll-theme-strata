@@ -28,3 +28,4 @@ logo: https://picsum.photos/123?image=669
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-avatar
