@@ -13,6 +13,16 @@
     <h1>
       <strong>{{ site.title | escape }}</strong><br />
       {{ site.description | escape }}
+      <nav>
+		{%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign nav_paths = site.nav | default: default_paths -%}
+		{%- for nav in nav_paths -%}
+          {%- assign nav = site.pages | where: "path", path | first -%}
+          {%- if nav.title -%}
+            <a class="page-link" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </nav>
     </h1>
   </div>
 </header>
